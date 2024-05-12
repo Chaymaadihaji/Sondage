@@ -10,3 +10,11 @@ To run the app locally, follow these steps:
 
 ## Clone this repository to your local machine:
 `git clone https://github.com/Chaymaadihaji/Sondage.git`
+## Navigate to the project directory:
+`cd Sondage`
+## Install dependencies:
+`npm install`
+`npm install firebase`
+`npm install --save react-firebase-hooks`
+## Start the development server:
+`npm run dev`
