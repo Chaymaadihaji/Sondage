@@ -1,17 +1,28 @@
 import React from 'react'
-import Nav from './components/navbar'
-import Footer from './components/footer'
-import Sondage from './components/Sondage'
+import Nav from './layouts/navbar'
+import Footer from './layouts/footer'
+import Sondage from './layouts/Sondage'
+import { db } from '../fireBase/fireBase'
+import { collection } from 'firebase/firestore'
+import { useCollectionData } from 'react-firebase-hooks/firestore'
 
 function Survey() {
+  const col = collection(db, "surveys")
+  const [values, loading, error] = useCollectionData(col)
+
   return (
     <>
-    <div className="bg-black h-screen">
+    <div className="bg-black h-max">
     <Nav/>
     <div className="grid place-items-center">
-         <Sondage/>
-        <Sondage/>
-        <Sondage/>
+    {!loading && values.map(v => (
+            <>
+              <Sondage titre={v.titre} description={v.description} />
+
+            </>
+          ))}
+        
+        
     </div>
    
     <Footer/>

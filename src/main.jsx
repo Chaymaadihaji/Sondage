@@ -9,6 +9,7 @@ import {
 import Home from './components/HomePage.jsx';
 import CreateSurvey from "./components/CreateSurvey.jsx"
 import Survey from './components/Survey.jsx';
+import Contact from './components/layouts/contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path:"/sondages",
     element:<Survey/>
+  },
+  {
+    path:"/contact",
+    element:<Contact/>
   }
 ]);
 

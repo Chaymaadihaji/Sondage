@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../index.css";
-import Nav from "./components/navbar";
-import Footer from "./components/footer";
+import Nav from "./layouts/navbar";
+import Footer from "./layouts/footer";
 import hand from "../public/hand.png"
 import sliders from "../public/sliders.png"
 
@@ -26,7 +26,7 @@ function Home() {
                       className="grow shrink-0 max-w-full aspect-[1.01] w-[175px] max-md:mt-4"
                     />
                   </div>
-                  <div className="flex flex-col ml-5 w-[64%] max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col ml-5 w-[70%] max-md:ml-0 max-md:w-full">
                     <div className="self-stretch my-auto text-2xl font-bold text-center text-white max-md:mt-10">
                       Ask questions, Get answers
                     </div>
@@ -53,7 +53,7 @@ function Home() {
           </div>
           <div className="flex flex-col ml-5 w-[43%] max-md:ml-0 max-md:w-full">
             <div className="py-28">
-              <button className="justify-center items-center self-stretch px-16 py-10 my-auto w-full text-2xl font-bold text-center text-black underline bg-white rounded-[50px] max-md:px-5 max-md:mt-10 max-md:max-w-full">Creer un Sondage</button>
+              <button className="justify-center items-center self-stretch px-16 py-10 my-auto w-full text-2xl font-bold text-center text-black underline bg-white rounded-[50px] max-md:px-5 max-md:mt-10 max-md:max-w-full"><a href="/createSondage" className="underline text-current">Creer un Sondage</a></button>
             </div>
           </div>
         </div>
