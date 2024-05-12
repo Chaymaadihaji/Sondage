@@ -13,8 +13,6 @@ To run the app locally, follow these steps:
 ## Navigate to the project directory:
 `cd Sondage`
 ## Install dependencies:
-`npm install`
-`npm install firebase`
-`npm install --save react-firebase-hooks`
+`npm install`  `npm install firebase`  `npm install --save react-firebase-hooks`
 ## Start the development server:
 `npm run dev`
