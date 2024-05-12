@@ -1,8 +1,12 @@
-# React + Vite
+## Survey App with Firebase Integration
+This is a simple survey application built with React that utilizes Firebase for storing survey data. Users can create and respond to surveys, with the results being stored in Firebase Firestore.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
+Create surveys with customizable questions and choices.
+Respond to surveys with multiple choice answers.
+View survey results.
+Installation
+To run the app locally, follow these steps:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Clone this repository to your local machine:
+`git clone https://github.com/Chaymaadihaji/Sondage.git`
